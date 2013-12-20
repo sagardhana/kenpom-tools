@@ -1,6 +1,6 @@
 require 'mechanize'
-require './lib/config.rb'
-require './lib/team.rb'
+require './config.rb'
+require './team.rb'
 
 module Kenpom
 
@@ -18,3 +18,5 @@ module Kenpom
     agent.get(url)    
   end
 end
+
+include Kenpom
